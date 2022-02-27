@@ -3,6 +3,7 @@ import Title from './components/Title';
 import ShoppingList from './components/ShoppingList';
 import styles from './App.module.css';
 import './App.css';
+import AdditionInputs from "./components/AdditionInputs";
 
 /* A ES6 class style stateful component for the shopping list application */
 class App extends React.Component {
@@ -33,6 +34,8 @@ class App extends React.Component {
         applicationName={ applicationName }
       />
       <ShoppingList items={ this.state.items } />
+
+      <AdditionInputs />
     </div>
   }
 }
